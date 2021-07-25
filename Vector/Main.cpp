@@ -7,12 +7,13 @@ int main() {
 	vector<int*> NumberVector;
 	int input = 10;
 	NumberVector.push_back(&input);
-	input = 8;
-	NumberVector.push_back(&input);
+	int input_2 = 8;
+	NumberVector.push_back(&input_2);
 
 	cout << *NumberVector.front() << endl;
 	cout << *NumberVector.back() << endl;
+	cout << *(*(NumberVector.begin())) << endl;
+	cout << *(*(NumberVector.end()-1)) << endl;
 	return 0;
 }
-
-//숙제가 정확히 머였죠?
+//update_2
